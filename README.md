@@ -92,9 +92,8 @@ import VueFroalaChartsComponent from 'vue-froalacharts/component';
 
 // import FroalaCharts modules and resolve dependency
 import FroalaCharts from 'froalacharts';
-import Charts from 'froalacharts/froalacharts.charts';
 
-const vueFroalaCharts = VueFroalaChartsComponent(FroalaCharts, Charts);
+const vueFroalaCharts = VueFroalaChartsComponent(FroalaCharts);
 
 Vue.component('froalacharts', vueFroalaCharts);
 ```
@@ -128,7 +127,7 @@ Now, we can access the chart object from `this.$refs.fc.chartObj`
 var app = new Vue({
   el: '#chart',
   data: {
-    type: 'Pie2D',
+    type: 'pie',
     width: '500',
     height: '300',
     dataFormat: 'json',
@@ -142,7 +141,7 @@ var app = new Vue({
 });
 ```
 
-This example will slice a Pie2d section when you rollover the chart.
+This example will slice a pie section when you rollover the chart.
 
 ## Working with Events
 
@@ -180,7 +179,7 @@ const myDataSource = {
     showPercentInTooltip: '0',
     numberPrefix: '$',
     enableMultiSlicing: '1',
-    theme: 'fusion'
+    theme: 'froala'
   },
   data: [
     {
@@ -209,7 +208,7 @@ const myDataSource = {
 const chart = new Vue({
   el: '#app',
   data: {
-    type: 'column2d',
+    type: 'pie',
     width: '500',
     height: '300',
     dataFormat: 'json',
