@@ -10,10 +10,10 @@ const schemaFetch = fetch(
   'https://s3.eu-central-1.amazonaws.com/fusion.store/ft/schema/plotting-multiple-series-on-time-axis-schema.json'
 ).then(jsonify);
 
-// Use VueFusionCharts plugins by calling the Vue.use() global method:
-// Vue.use(VueFusionCharts, FusionCharts, Charts);
+// Use VueFroalaCharts plugins by calling the Vue.use() global method:
+// Vue.use(VueFroalaCharts, FroalaCharts);
 
-//Use this to add vue-fusioncharts a component
+//Use this to add vue-froalacharts a component
 let vFC = VueFCComponent(FroalaCharts);
 Vue.component('froalacharts', vFC);
 
@@ -132,11 +132,11 @@ var chart = new Vue({
     Promise.all([dataFetch, schemaFetch]).then(res => {
       const data = res[0];
       const schema = res[1];
-      const fusionTable = new FroalaCharts.DataStore().createDataTable(
+      const froalaTable = new FroalaCharts.DataStore().createDataTable(
         data,
         schema
       );
-      this.dataSource.data = fusionTable;
+      this.dataSource.data = froalaTable;
     });
   }
 });

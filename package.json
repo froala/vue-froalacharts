@@ -70,7 +70,7 @@
     "chai": "^3.5.0",
     "eslint": "^3.19.0",
     "eslint-loader": "^2.0.0",
-    "froalacharts": "^1.0.4",
+    "froalacharts": "^1.0.0",
     "lodash": "^4.17.11",
     "mocha": "^5.2.0",
     "rollup-plugin-commonjs": "^8.0.2",
