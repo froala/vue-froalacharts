@@ -7,7 +7,7 @@ A simple and lightweight `VueJS` component for `FroalaCharts` JavaScript Chartin
 - Github Repo: [https://github.com/froala/vue-froalacharts](https://github.com/froala/vue-froalacharts)
 - Documentation: [https://www.fusioncharts.com/dev/getting-started/vue/your-first-chart-using-vuejs](https://www.fusioncharts.com/dev/getting-started/vue/your-first-chart-using-vuejs)
 - Support: [https://www.fusioncharts.com/contact-support](https://www.fusioncharts.com/contact-support)
-- FusionCharts
+- FroalaCharts
   - Official Website: [https://www.fusioncharts.com/](https://www.fusioncharts.com/)
   - Official NPM Package: [https://www.npmjs.com/package/fusioncharts](https://www.npmjs.com/package/fusioncharts)
 - Issues: [https://github.com/fusioncharts/vue-fusioncharts/issues](https://github.com/fusioncharts/vue-fusioncharts/issues)
@@ -102,7 +102,7 @@ This way is recommended when you want component (`vue-froalacharts` ) only in sp
 
 Click [here](https://jsfiddle.net/rohitcoolblog/5Lt720a9/) to view the live example.
 
-Where `eventName` can be any froalacharts event. You can find the list of events at [fusioncharts devcenter](https://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-events)
+Where `eventName` can be any froalacharts event. You can find the list of events at [froalacharts devcenter](https://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-events)
 
 ## Working with APIs
 
@@ -238,13 +238,13 @@ links to help you get started:
 - [Documentation](https://www.fusioncharts.com/dev/getting-started/vue/your-first-chart-using-vuejs)
 - [Use Chart API events & methods in Vue](https://www.fusioncharts.com/dev/getting-started/vue/configure-your-chart-using-vuejs)
 - [Chart gallery](https://www.fusioncharts.com/explore/chart-gallery)
-- [FusionCharts API](https://www.fusioncharts.com/dev/api/fusioncharts)
+- [FroalaCharts API](https://www.fusioncharts.com/dev/api/fusioncharts)
 
 ## Usage and integration of FusionTime
 
-From `fusioncharts@3.13.3-sr.1` and `vue-fusioncharts@3.0.0`, You can visualize timeseries data easily with vue.
+From `froalacharts@1.0.11` and `vue-froalacharts@1.0.0`, You can visualize timeseries data easily with vue.
 
-Learn more about FusionTime [here](https://www.fusioncharts.com/fusiontime).
+Learn more about FroalaTime [here](https://www.fusioncharts.com/fusiontime).
 
 ### Sample code for FusionTime
 
@@ -317,7 +317,7 @@ Here's HTML template for the above example:
 
 Useful links for FusionTime
 
-- [How FusionTime works](https://www.fusioncharts.com/dev/fusiontime/getting-started/how-fusion-time-works)
+- [How FroalaTime works](https://www.fusioncharts.com/dev/fusiontime/getting-started/how-fusion-time-works)
 - [Create your first chart](https://www.fusioncharts.com/dev/fusiontime/getting-started/create-your-first-chart-in-fusiontime)
 
 ## Going beyond Charts
