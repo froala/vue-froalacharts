@@ -6,7 +6,7 @@ A simple and lightweight `VueJS` component for `FroalaCharts` JavaScript Chartin
 
 - Github Repo: [https://github.com/froala/vue-froalacharts](https://github.com/froala/vue-froalacharts)
 - Documentation: [https://www.fusioncharts.com/dev/getting-started/vue/your-first-chart-using-vuejs](https://www.fusioncharts.com/dev/getting-started/vue/your-first-chart-using-vuejs)
-- Support: [https://www.fusioncharts.com/contact-support](https://www.fusioncharts.com/contact-support)
+- Support: [https://froala.com/contact/](https://froala.com/contact/)
 - FroalaCharts
   - Official Website: [https://www.fusioncharts.com/](https://www.fusioncharts.com/)
   - Official NPM Package: [https://www.npmjs.com/package/fusioncharts](https://www.npmjs.com/package/fusioncharts)
@@ -339,4 +339,4 @@ $ npm install
 
 ## Licensing
 
-The FroalaCharts Vue component is open-source and distributed under the terms of the MIT/X11 License. However, you will need to download and include FroalaCharts library in your page separately, which has a [separate license](https://github.com/froala/vue-froalacharts/blob/master/README.md#licensing).
+The FroalaCharts Vue component is open-source and distributed under the terms of the MIT/X11 License. However, you will need to download and include FroalaCharts library in your page separately, which has a [separate license](https://www.ideracorp.com/legal/Froala#tabs-2).
