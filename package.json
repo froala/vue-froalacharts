@@ -1,10 +1,10 @@
 {
   "name": "vue-froalacharts",
   "version": "1.0.0",
-  "description": "FroalaCharts component for Vue.js",
+  "description": "Simple and lightweight official Vue component for FroalaCharts.",
   "main": "dist/vue-froalacharts.js",
-  "author": "Idera",
-  "homepage": "http://www.froala.com/",
+  "author": "froala",
+  "homepage": "https://github.com/froala/vue-froalacharts",
   "repository": {
     "type": "git",
     "url": "https://github.com/froala/vue-froalacharts.git"
@@ -12,27 +12,6 @@
   "bugs": {
     "url": "https://github.com/froala/vue-froalacharts/issues"
   },
-  "contributors": [
-    {
-      "name": "Rohit Kumar",
-      "email": "rohit.kr001@gmail.com",
-      "url": "https://github.com/rohitkr",
-      "contributions": 18,
-      "additions": 44526,
-      "deletions": 144,
-      "hireable": null
-    },
-    {
-      "name": "Rohan Dey",
-      "email": "rohanoid5@gmail.com",
-      "url": "https://github.com/rohanoid5"
-    },
-    {
-      "name": "Ashok Mandal",
-      "email": "askipop@gmail.com",
-      "url": "https://github.com/ashok1994"
-    }
-  ],
   "keywords": [
     "Vue",
     "Vue.js",
@@ -46,8 +25,7 @@
     "visualization",
     "data-visualization",
     "dataviz",
-    "browserify",
-    "webpack"
+    "vue-charts"
   ],
   "scripts": {
     "test": "npm run lint",
@@ -70,7 +48,7 @@
     "chai": "^3.5.0",
     "eslint": "^3.19.0",
     "eslint-loader": "^2.0.0",
-    "froalacharts": "^1.0.6",
+    "froalacharts": "^1.0.0",
     "lodash": "^4.17.11",
     "mocha": "^5.2.0",
     "rollup-plugin-commonjs": "^8.0.2",

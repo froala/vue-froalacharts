@@ -1,16 +1,14 @@
 # vue-froalacharts
 
-A simple and lightweight `VueJS` component for `FroalaCharts` JavaScript Charting Library. The `Vue-FroalaCharts` wrapper lets you easily include FroalaCharts in your `VueJS` projects.
-
-## [Demo](https://github.com/froala/vue-froalacharts/blob/master/README.md#demo)
+Simple and lightweight Vue component for FroalaCharts. `vue-froalacharts` enables you to add JavaScript charts in your Vue application or project without any hassle.
 
 - Github Repo: [https://github.com/froala/vue-froalacharts](https://github.com/froala/vue-froalacharts)
-- Documentation: [https://www.fusioncharts.com/dev/getting-started/vue/your-first-chart-using-vuejs](https://www.fusioncharts.com/dev/getting-started/vue/your-first-chart-using-vuejs)
-- Support: [https://froala.com/contact/](https://froala.com/contact/)
+- Documentation: [https://froala.com/charts/docs/frameworks/vue/](https://froala.com/charts/docs/frameworks/vue/)
+- Support: [support@froala.com](support@froala.com)
 - FroalaCharts
-  - Official Website: [https://www.fusioncharts.com/](https://www.fusioncharts.com/)
-  - Official NPM Package: [https://www.npmjs.com/package/fusioncharts](https://www.npmjs.com/package/fusioncharts)
-- Issues: [https://github.com/fusioncharts/vue-fusioncharts/issues](https://github.com/fusioncharts/vue-fusioncharts/issues)
+  - Official Website: [https://froala.com/](https://froala.com/)
+  - Official NPM Package: [https://www.npmjs.com/package/froalacharts](https://www.npmjs.com/package/froalacharts)
+- Issues: [https://github.com/froala/vue-froalacharts/issues](https://github.com/froala/vue-froalacharts/issues)
 
 ---
 
@@ -20,11 +18,7 @@ A simple and lightweight `VueJS` component for `FroalaCharts` JavaScript Chartin
   - [Requirements](#requirements)
   - [Installation](#installation)
   - [Usage](#usage)
-  - [Working with chart API](#working-with-apis)
-  - [Working with events](#working-with-events)
 - [Quick Start](#quick-start)
-- [Going Beyond Charts](#going-beyond-charts)
-- [Usage and Integration of FusionTime](#usage-and-integration-of-fusiontime)
 - [For Contributors](#for-contributors)
 - [Licensing](#licensing)
 
@@ -54,7 +48,7 @@ yarn add vue-froalacharts
 
 **Include in your script**
 
-Download [`vue-froalacharts.js`](https://github.com/fusioncharts/vue-fusioncharts/blob/master/dist/vue-fusioncharts.js) and include it in the HTML `<script>` tag.
+Download `vue-froalacharts.js` and include it in the HTML `<script>` tag.
 
 ```html
 <script src="vue-froalacharts.js" type="text/javascript"></script>
@@ -100,64 +94,7 @@ Vue.component('froalacharts', vueFroalaCharts);
 
 This way is recommended when you want component (`vue-froalacharts` ) only in specific components of your app.
 
-Click [here](https://jsfiddle.net/rohitcoolblog/5Lt720a9/) to view the live example.
-
-Where `eventName` can be any froalacharts event. You can find the list of events at [froalacharts devcenter](https://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-events)
-
-## Working with APIs
-
-To call APIs we will need the chart object. To get the chart object from the component we can use `ref` and retrieve it from `this.$refs[refname].chartObj`
-
-```html
-<froalacharts
-  :type="type"
-  :width="width"
-  :height="height"
-  :dataFormat="dataFormat"
-  :dataSource="dataSource"
-  @dataPlotRollover="onDataPlotRollover"
-  ref="fc"
->
-</froalacharts>
-```
-
-Now, we can access the chart object from `this.$refs.fc.chartObj`
-
-```js
-var app = new Vue({
-  el: '#chart',
-  data: {
-    type: 'pie',
-    width: '500',
-    height: '300',
-    dataFormat: 'json',
-    dataSource: myDataSource
-  },
-  methods: {
-    onDataPlotRollover: function(e) {
-      this.$refs.fc.chartObj.slicePlotItem(0);
-    }
-  }
-});
-```
-
-This example will slice a pie section when you rollover the chart.
-
-## Working with Events
-
-To attach event listeners to FroalaCharts, you can use the `v-on` or `@` operator in the vue-froalacharts component.
-
-```html
-<froalacharts
-  :type="type"
-  :width="width"
-  :height="height"
-  :dataFormat="dataFormat"
-  :dataSource="dataSource"
-  @eventName="eventHandler"
->
-</froalacharts>
-```
+Where `eventName` can be any FroalaCharts event. You can find the list of events at [froalacharts docs](https://froala.com/charts/docs/api/events/)
 
 ## Quick Start
 
@@ -168,7 +105,7 @@ import Vue from 'vue';
 import VueFroalaCharts from 'vue-froalacharts';
 import FroalaCharts from 'froalacharts';
 
-// register VueFusionCharts component
+// register VueFroalaCharts component
 Vue.use(VueFroalaCharts, FroalaCharts);
 
 const myDataSource = {
@@ -234,96 +171,9 @@ Here's HTML template for the above example:
 
 links to help you get started:
 
-- [Live Samples with code](https://fusioncharts.github.io/vue-fusioncharts/)
-- [Documentation](https://www.fusioncharts.com/dev/getting-started/vue/your-first-chart-using-vuejs)
-- [Use Chart API events & methods in Vue](https://www.fusioncharts.com/dev/getting-started/vue/configure-your-chart-using-vuejs)
-- [Chart gallery](https://www.fusioncharts.com/explore/chart-gallery)
-- [FroalaCharts API](https://www.fusioncharts.com/dev/api/fusioncharts)
-
-## Usage and integration of FusionTime
-
-From `froalacharts@1.0.11` and `vue-froalacharts@1.0.0`, You can visualize timeseries data easily with vue.
-
-Learn more about FroalaTime [here](https://www.fusioncharts.com/fusiontime).
-
-### Sample code for FusionTime
-
-```js
-import Vue from 'vue';
-import VueFroalaCharts from 'vue-froalacharts';
-import FroalaCharts from 'froalacharts';
-
-// register VueFroalaCharts
-Vue.use(VueFroalaCharts, FroalaCharts);
-
-const jsonify = res => res.json();
-const dataFetch = fetch(
-  'https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/fusiontime-beta-release/charts-resources/fusiontime/online-sales-single-series/data.json'
-).then(jsonify);
-const schemaFetch = fetch(
-  'https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/fusiontime-beta-release/charts-resources/fusiontime/online-sales-single-series/schema.json'
-).then(jsonify);
-
-const chart = new Vue({
-  el: '#app',
-  data: {
-    width: '500',
-    height: '300',
-    type: 'timeseries',
-    dataFormat: 'json',
-    dataSource: {
-      caption: { text: 'Online Sales of a SuperStore in the US' },
-      data: null,
-      yAxis: [
-        {
-          plot: [
-            {
-              value: 'Sales ($)'
-            }
-          ]
-        }
-      ]
-    }
-  },
-  mounted: function() {
-    Promise.all([dataFetch, schemaFetch]).then(res => {
-      const data = res[0];
-      const schema = res[1];
-      const froalaTable = new FroalaCharts.DataStore().createDataTable(
-        data,
-        schema
-      );
-      this.dataSource.data = froalaTable;
-    });
-  }
-});
-```
-
-Here's HTML template for the above example:
-
-```html
-<div id="app">
-  <froalacharts
-    :width="width"
-    :height="height"
-    :type="type"
-    :dataFormat="dataFormat"
-    :dataSource="dataSource"
-  >
-    FroalaCharts will render here...
-  </froalacharts>
-</div>
-```
-
-Useful links for FusionTime
-
-- [How FroalaTime works](https://www.fusioncharts.com/dev/fusiontime/getting-started/how-fusion-time-works)
-- [Create your first chart](https://www.fusioncharts.com/dev/fusiontime/getting-started/create-your-first-chart-in-fusiontime)
-
-## Going beyond Charts
-
-- Explore 20+ pre-built business specific dashboards for different industries like energy and manufacturing to business functions like sales, marketing and operations [here](https://www.fusioncharts.com/explore/dashboards).
-- See [Data Stories](https://www.fusioncharts.com/explore/data-stories) built using FusionCharts’ interactive JavaScript visualizations and learn how to communicate real-world narratives through underlying data to tell compelling stories.
+- [Documentation](https://froala.com/charts/docs/frameworks/vue/)
+- [FroalaCharts API](https://froala.com/charts/docs/api/options/)
+- [Chart gallery](https://froala.com/charts/tour/)
 
 ## For Contributors
 
@@ -339,4 +189,4 @@ $ npm install
 
 ## Licensing
 
-The FroalaCharts Vue component is open-source and distributed under the terms of the MIT/X11 License. However, you will need to download and include FroalaCharts library in your page separately, which has a [separate license](https://www.ideracorp.com/legal/Froala#tabs-2).
+The FroalaCharts Vue component is open-source and distributed under the terms of the MIT/X11 License. However, you will need to download and include FroalaCharts library in your page separately, which has a [separate license](https://www.ideracorp.com/Legal/Froala/FroalaChartsLicenseAgreement).
