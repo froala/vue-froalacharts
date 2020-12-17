@@ -2243,13 +2243,13 @@ function updateChart(This) {
      * The execution of chained methods is lazy, that is, it's deferred until
      * `_#value` is implicitly or explicitly called.
      *
-     * Lazy evaluation allows several methods to support shortcut froala.
-     * Shortcut froala is an optimization to merge iteratee calls; this avoids
+     * Lazy evaluation allows several methods to support shortcut fusion.
+     * Shortcut fusion is an optimization to merge iteratee calls; this avoids
      * the creation of intermediate arrays and can greatly reduce the number of
      * iteratee executions. Sections of a chain sequence qualify for shortcut
-     * froala if the section is applied to an array and iteratees accept only
+     * fusion if the section is applied to an array and iteratees accept only
      * one argument. The heuristic for whether a section qualifies for shortcut
-     * froala is subject to change.
+     * fusion is subject to change.
      *
      * Chaining is supported in custom builds as long as the `_#value` method is
      * directly or indirectly included in the build.
@@ -2262,7 +2262,7 @@ function updateChart(This) {
      * The wrapper `String` methods are:
      * `replace` and `split`
      *
-     * The wrapper methods that support shortcut froala are:
+     * The wrapper methods that support shortcut fusion are:
      * `at`, `compact`, `drop`, `dropRight`, `dropWhile`, `filter`, `find`,
      * `findLast`, `head`, `initial`, `last`, `map`, `reject`, `reverse`, `slice`,
      * `tail`, `take`, `takeRight`, `takeRightWhile`, `takeWhile`, and `toArray`

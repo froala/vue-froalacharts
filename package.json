@@ -1,6 +1,6 @@
 {
   "name": "vue-froalacharts",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple and lightweight official Vue component for FroalaCharts.",
   "main": "dist/vue-froalacharts.js",
   "author": "froala",
